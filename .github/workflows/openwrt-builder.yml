@@ -59,7 +59,7 @@ jobs:
         sudo chown $USER:$GROUPS /workdir
 
     - name: Install Golang
-      uses: actions/steup-go@v5
+      uses: actions/setup-go@v5
       with:
         go-version: '1.22.2'
 
