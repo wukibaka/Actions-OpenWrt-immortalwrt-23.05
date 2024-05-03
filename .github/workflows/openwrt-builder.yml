@@ -58,6 +58,11 @@ jobs:
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
 
+    - name: Install Golang
+      uses: actions/setup-go@v5
+      with:
+        goversion: '1.22.2'
+
     - name: Clone source code
       working-directory: /workdir
       run: |
