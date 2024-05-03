@@ -61,7 +61,7 @@ jobs:
     - name: Install Golang
       uses: actions/setup-go@v5
       with:
-        goversion: '1.22.2'
+        go-version: '1.22.2'
 
     - name: Clone source code
       working-directory: /workdir
